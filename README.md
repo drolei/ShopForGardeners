@@ -1,4 +1,4 @@
 # ShopForGardeners
-shop gardeners with authorization
-this is store of gardeners
-first you need to log in, after you can use the store
+shop gardeners with authorization.
+This is store of gardeners.
+First you need to log in, after you can use the store.

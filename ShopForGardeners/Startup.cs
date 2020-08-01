@@ -72,7 +72,7 @@ namespace ShopForGardeners
             app.UseMvc(routes =>
             {
                 routes.MapRoute(name: "default", template: "{controller=Home}/{action=Index}/{id?}");
-                routes.MapRoute(name: "categoryFilter", template: "Item/{action}/{category?}", defaults: new { Controller = "Items", action = "List" });
+                routes.MapRoute(name: "categoryFilter", template: "{controller}/{action}/{category?}", defaults: new { Controller = "Items", action = "List" });
             });
 
 

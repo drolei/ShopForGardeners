@@ -24,7 +24,7 @@ namespace ShopForGardeners
 
         public Startup(IHostEnvironment hostenv)
         {
-            //строка поключения к бд
+            //get string of file.json
             _confstring = new ConfigurationBuilder().SetBasePath(hostenv.ContentRootPath).AddJsonFile("dbsettings.json").Build();
         }
 
@@ -61,13 +61,13 @@ namespace ShopForGardeners
             {
                 app.UseDeveloperExceptionPage();
             }
-            //ошибки статускоды
+            //пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
             app.UseStatusCodePages();
             app.UseStaticFiles();
             app.UseSession();
-            app.UseAuthentication();    // аутентификация
-            app.UseAuthorization();     // авторизация
-            //дефолтный путь при не правильном юрл
+            app.UseAuthentication();    // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+            app.UseAuthorization();     // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+            //пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ
             //app.UseMvcWithDefaultRoute();
             app.UseMvc(routes =>
             {
